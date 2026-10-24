@@ -1,0 +1,85 @@
+\section*{NeurIPS Paper Checklist}
+
+\begin{enumerate}
+
+\item {\bf Claims}
+    \item[] Question: Do the main claims made in the abstract and introduction accurately reflect the paper's contributions and scope?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: The abstract and the contributions list in Section~\ref{sec:introduction} state three scoped claims---a four-axis protocol with a composite index (developed in Section~\ref{sec:protocol}), a reference evaluation of six quantum ans\"atze (Sections~\ref{sec:protocol-results}--\ref{sec:real-data-results}), and an empirical diagnosis of metric divergence (Section~\ref{sec:metric-divergence})---each of which is demonstrated in the indicated section and not stronger than what the experiments support. The paper does not claim a new quantum algorithm, a new model, or hardware results.
+
+\item {\bf Limitations}
+    \item[] Question: Does the paper discuss the limitations of the work performed by the authors?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: Section~\ref{sec:limitations} lists the main ones: fixed optimization budget on hard chaotic regressions, depolarizing noise as a proxy for real hardware error channels, a reference operating point of $(n,L) = (3,3)$ with a single $(4,4)$ repeat (Appendix~\ref{app:scaling-n4-l4}) showing that composite rank bands do not transfer across operating points, the probe-loss dependence of \bppi\ (Appendix~\ref{app:bppi-probe-ablation}), and the scope restriction to unitary ans\"atze with expectation-value readouts. Section~\ref{sec:problem-formulation} separately discusses the reasons mid-circuit measurement and feed-forward mechanisms are outside the reference registry.
+
+\item {\bf Theory assumptions and proofs}
+    \item[] Question: For each theoretical result, does the paper provide the full set of assumptions and a complete (and correct) proof?
+    \item[] Answer: \answerNA{}
+    \item[] Justification: The paper does not state theorems or proofs. The equations in Section~\ref{sec:protocol} are metric \emph{definitions} whose design rationale and coefficient choices are discussed in-place and in Appendix~\ref{app:metric-details}.
+
+\item {\bf Experimental result reproducibility}
+    \item[] Question: Does the paper fully disclose all the information needed to reproduce the main experimental results of the paper to the extent that it affects the main claims and/or conclusions of the paper?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: Section~\ref{sec:methods} fixes all training details (task sizes, optimizer, learning rate, optimization budgets, qubit and layer counts, the barren-plateau qubit sweep, and the noise ladder). Appendix~\ref{app:metric-details} gives the per-metric artifact manifest and the run-fingerprint convention used to invalidate cached partial runs. The source code, metric definitions, seeds, and per-seed raw diagnostics are publicly released at the repository named in Appendix~\ref{app:reproducibility}.
+
+\item {\bf Open access to data and code}
+    \item[] Question: Does the paper provide open access to the data and code, with sufficient instructions to faithfully reproduce the main experimental results, as described in supplemental material?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: The full evaluation pipeline (circuit registry, metric implementations, plotting and table-export scripts, and pre-computed per-seed raw diagnostics) is publicly released at the repository named in Appendix~\ref{app:reproducibility} (the same code was provided as the supplement during review). A top-level driver runs the protocol end-to-end; the required commands, environment specification, and expected outputs are included in the repository README. All datasets used (Lorenz, Mackey--Glass, scikit-learn \textsc{circles}/\textsc{moons}/Iris) are either synthesized by the released code or loaded from publicly available sources.
+
+\item {\bf Experimental setting/details}
+    \item[] Question: Does the paper specify all the training and test details necessary to understand the results?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: Section~\ref{sec:methods} fixes the optimizer (Adam), the learning rate, the training-set and evaluation-set sizes, the step budgets (including the per-method step boosts documented with the release), the random seed convention, the qubit-sweep and noise-ladder parameters, and the split used for the hybrid baseline.
+
+\item {\bf Experiment statistical significance}
+    \item[] Question: Does the paper report error bars suitably and correctly defined or other appropriate information about the statistical significance of the experiments?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: Tables~\ref{tab:nlps-components}--\ref{tab:real-data} report mean $\pm$ one standard deviation across random-seed replicates of the full protocol (the number of seeds $K$ is stated in the aggregation blurb appended to each caption). The factor of variability is the global random seed (\texttt{QNLEP\_SEED}), which controls parameter initialization, the Lorenz train/test split, the barren-plateau initialization ensemble, and the quantum-reservoir random unitary. Standard deviations are computed across seeds using the standard unbiased estimator; with a single seed the tables fall back to point estimates, which is stated in the caption.
+
+\item {\bf Experiments compute resources}
+    \item[] Question: For each experiment, does the paper provide sufficient information on the computer resources needed to reproduce the experiments?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: The ``Compute footprint'' subsection in Appendix~\ref{app:reproducibility} reports that the full protocol at $(n, L) = (3, 3)$ runs in approximately two hours of wall time on a single eight-core consumer CPU (no GPU) and that a five-seed sweep completes overnight on the same machine; the $(4,4)$ repeat (Appendix~\ref{app:scaling-n4-l4}) has the same per-seed cost, and the probe ablation (Appendix~\ref{app:bppi-probe-ablation}) runs at a reduced budget stated there. The barren-plateau sweep at $n = 8$ with $N_{\mathrm{init}} = 256$ is the dominant cost.
+
+\item {\bf Code of ethics}
+    \item[] Question: Does the research conducted in the paper conform, in every respect, with the NeurIPS Code of Ethics?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: The work is a methodological contribution evaluated on textbook synthetic tasks (Lorenz, Mackey--Glass, sinusoidal ladders, and small classical benchmarks shipped with scikit-learn). It does not involve human subjects, personal data, crowdsourcing, pre-trained generative models, or scraped web content. Anonymity requirements were respected during review.
+
+\item {\bf Broader impacts}
+    \item[] Question: Does the paper discuss both potential positive societal impacts and negative societal impacts of the work performed?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: Section~\ref{sec:conclusion} states that the protocol is an evaluation tool for a pre-deployment research community and that no dual-use concerns specific to it are identified.
+
+\item {\bf Safeguards}
+    \item[] Question: Does the paper describe safeguards that have been put in place for responsible release of data or models that have a high risk for misuse?
+    \item[] Answer: \answerNA{}
+    \item[] Justification: The only asset released is an evaluation pipeline together with its metric definitions, synthetic data loaders, and scalar scores; no generative model, pre-trained weights, or scraped dataset is released, and the assets carry no identifiable misuse profile beyond that of any open-source scientific code.
+
+\item {\bf Licenses for existing assets}
+    \item[] Question: Are the creators or original owners of assets used in the paper properly credited and are the license and terms of use explicitly mentioned and properly respected?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: The ``Existing assets and licenses'' subsection in Appendix~\ref{app:reproducibility} credits PennyLane~\citep{bergholm2018pennylane} (Apache~2.0) for circuit simulation and scikit-learn~\citep{pedregosa2011scikitlearn} (BSD-3-Clause) for classical baselines and toy datasets; Lorenz~\citep{lorenz1963} and Mackey--Glass~\citep{mackeyglass1977} trajectories are generated from their canonical equations.
+
+\item {\bf New assets}
+    \item[] Question: Are new assets introduced in the paper well documented and is the documentation provided alongside the assets?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: The new asset is the evaluation protocol itself, released as a pipeline with a method registry, metric implementations, synthetic data loaders, seed-indexed raw diagnostics, and an ordered driver script. The assets are documented in Appendix~\ref{app:metric-details} (per-metric reproducibility manifest, run-fingerprint convention) and in Section~\ref{sec:evaluation-protocol} (registration interface for new methods); intended use is scientific benchmarking of non-linearity mechanisms in variational quantum models.
+
+\item {\bf Crowdsourcing and research with human subjects}
+    \item[] Question: For crowdsourcing experiments and research with human subjects, does the paper include the full text of instructions given to participants and screenshots, if applicable, as well as details about compensation?
+    \item[] Answer: \answerNA{}
+    \item[] Justification: The paper does not involve crowdsourcing or research with human subjects.
+
+\item {\bf Institutional review board (IRB) approvals or equivalent for research with human subjects}
+    \item[] Question: Does the paper describe potential risks incurred by study participants, whether such risks were disclosed to the subjects, and whether Institutional Review Board (IRB) approvals (or an equivalent approval/review based on the requirements of your country or institution) were obtained?
+    \item[] Answer: \answerNA{}
+    \item[] Justification: The paper does not involve human subjects.
+
+\item {\bf Declaration of LLM usage}
+    \item[] Question: Does the paper describe the usage of LLMs if it is an important, original, or non-standard component of the core methods in this research?
+    \item[] Answer: \answerNA{}
+    \item[] Justification: LLMs are not a component of the method. The evaluated models are variational quantum circuits and a small classical multilayer perceptron baseline, none of which involve large language models. Any use of LLMs was limited to writing, editing, and formatting assistance, which per the checklist guidelines does not require a declaration.
+
+\end{enumerate}

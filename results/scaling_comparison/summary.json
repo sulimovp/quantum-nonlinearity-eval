@@ -1,0 +1,44 @@
+{
+  "generated_utc": "2026-07-25T01:09:53.495738+00:00",
+  "point1": {
+    "n": 3,
+    "L": 3,
+    "scores": {
+      "data_reuploading": 0.56694,
+      "ancilla_tracing": 0.55092,
+      "ancilla_reuploading": 0.49058,
+      "strongly_entangling": 0.22847999999999996,
+      "qcnn": 0.46962000000000004,
+      "quantum_reservoir": 0.21328
+    },
+    "ranking": [
+      "data_reuploading",
+      "ancilla_tracing",
+      "ancilla_reuploading",
+      "qcnn",
+      "strongly_entangling",
+      "quantum_reservoir"
+    ]
+  },
+  "point2": {
+    "n": 4,
+    "L": 4,
+    "scores": {
+      "data_reuploading": 0.55858,
+      "ancilla_tracing": 0.43343999999999994,
+      "ancilla_reuploading": 0.59906,
+      "strongly_entangling": 0.27677999999999997,
+      "qcnn": 0.43886000000000003,
+      "quantum_reservoir": 0.21746
+    },
+    "ranking": [
+      "ancilla_reuploading",
+      "data_reuploading",
+      "qcnn",
+      "ancilla_tracing",
+      "strongly_entangling",
+      "quantum_reservoir"
+    ]
+  },
+  "kendall_tau": 0.6
+}

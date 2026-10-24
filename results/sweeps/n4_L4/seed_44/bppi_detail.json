@@ -1,0 +1,86 @@
+{
+  "score_definition": "smooth_bppi_from_slope",
+  "n_qubit_sweep": [
+    2,
+    4,
+    6,
+    8
+  ],
+  "n_random_init": 256,
+  "x_probe": 0.5,
+  "run_seed": 44,
+  "by_method": {
+    "data_reuploading": {
+      "slope_alpha": -0.28435554002331165,
+      "intercept_beta": -2.7702876723895047,
+      "r2_fit": 0.8222392367222153,
+      "gradient_variances": [
+        0.12242142691753669,
+        0.04762737116777064,
+        0.046247196478612626,
+        0.033223918856286484
+      ],
+      "score_definition": "smooth_bppi_from_slope"
+    },
+    "ancilla_tracing": {
+      "slope_alpha": -0.09476298283795678,
+      "intercept_beta": -3.6156236829457966,
+      "r2_fit": 0.3890729665194274,
+      "gradient_variances": [
+        0.08454181274344928,
+        0.04615448187453379,
+        0.061568769930697875,
+        0.04956548437362892
+      ],
+      "score_definition": "smooth_bppi_from_slope"
+    },
+    "ancilla_reuploading": {
+      "slope_alpha": -0.010014766322339108,
+      "intercept_beta": -4.082467237373875,
+      "r2_fit": 0.007537093180784224,
+      "gradient_variances": [
+        0.06219232515221543,
+        0.060275191946271886,
+        0.0421256819460555,
+        0.0669117485840567
+      ],
+      "score_definition": "smooth_bppi_from_slope"
+    },
+    "strongly_entangling": {
+      "slope_alpha": -1.851189009887312,
+      "intercept_beta": -2.31322991547437,
+      "r2_fit": 0.9993467381331257,
+      "gradient_variances": [
+        0.016379623611108934,
+        0.0011455871041908684,
+        8.23481929024055e-05,
+        7.591701693729037e-06
+      ],
+      "score_definition": "smooth_bppi_from_slope"
+    },
+    "qcnn": {
+      "slope_alpha": -0.3817003712803265,
+      "intercept_beta": -1.7248579275682179,
+      "r2_fit": 0.6794665555591274,
+      "gradient_variances": [
+        0.27593548322772554,
+        0.0623993106111401,
+        0.047178996000208556,
+        0.05191141208927298
+      ],
+      "score_definition": "smooth_bppi_from_slope"
+    },
+    "quantum_reservoir": {
+      "slope_alpha": 0.9416168569209479,
+      "intercept_beta": -18.881893329172073,
+      "r2_fit": 0.1863399641139859,
+      "gradient_variances": [
+        4.954169987717565e-06,
+        4.24681002558892e-06,
+        0.016747978128822984,
+        2.432412217035847e-05
+      ],
+      "score_definition": "smooth_bppi_from_slope"
+    }
+  }
+}

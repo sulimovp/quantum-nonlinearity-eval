@@ -1,0 +1,8 @@
+{
+  "data_reuploading": 0.3333333333333333,
+  "ancilla_tracing": 0.3333333333333333,
+  "ancilla_reuploading": 0.3333333333333333,
+  "strongly_entangling": 0.2222222222222222,
+  "qcnn": 0.5,
+  "quantum_reservoir": 1.0
+}

@@ -1,0 +1,14 @@
+{
+  "generated_utc": "2026-05-04T13:02:59.181165+00:00",
+  "seed": 12345,
+  "n_samples": 100000,
+  "results_dir": "results",
+  "out_dir": "results\\weight_sensitivity",
+  "elapsed_s_total": 0.7205910000484437,
+  "outputs": [
+    "nlps_global_sensitivity.json",
+    "nlps_local_sensitivity.json",
+    "ter_internal_sensitivity.json",
+    "summary.txt"
+  ]
+}

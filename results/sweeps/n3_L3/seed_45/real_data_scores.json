@@ -1,0 +1,172 @@
+{
+  "circles": {
+    "classical_mlp": {
+      "score": 1.0,
+      "steps": 72
+    },
+    "hybrid_hqnn": {
+      "score": 0.7291666666666666,
+      "steps": 72
+    },
+    "data_reuploading": {
+      "score": 0.7291666666666666,
+      "steps": 72
+    },
+    "ancilla_tracing": {
+      "score": 0.7291666666666666,
+      "steps": 72
+    },
+    "ancilla_reuploading": {
+      "score": 0.7083333333333334,
+      "steps": 72
+    },
+    "strongly_entangling": {
+      "score": 0.7291666666666666,
+      "steps": 72
+    },
+    "qcnn": {
+      "score": 0.75,
+      "steps": 72
+    },
+    "quantum_reservoir": {
+      "score": 0.75,
+      "steps": 72
+    }
+  },
+  "moons": {
+    "classical_mlp": {
+      "score": 1.0,
+      "steps": 72
+    },
+    "hybrid_hqnn": {
+      "score": 0.6875,
+      "steps": 72
+    },
+    "data_reuploading": {
+      "score": 0.75,
+      "steps": 72
+    },
+    "ancilla_tracing": {
+      "score": 0.7083333333333334,
+      "steps": 72
+    },
+    "ancilla_reuploading": {
+      "score": 0.6875,
+      "steps": 72
+    },
+    "strongly_entangling": {
+      "score": 0.7291666666666666,
+      "steps": 72
+    },
+    "qcnn": {
+      "score": 0.75,
+      "steps": 72
+    },
+    "quantum_reservoir": {
+      "score": 0.3958333333333333,
+      "steps": 72
+    }
+  },
+  "iris_1v2": {
+    "classical_mlp": {
+      "score": 0.9333333333333333,
+      "steps": 72
+    },
+    "hybrid_hqnn": {
+      "score": 0.6,
+      "steps": 72
+    },
+    "data_reuploading": {
+      "score": 0.6333333333333333,
+      "steps": 72
+    },
+    "ancilla_tracing": {
+      "score": 0.7,
+      "steps": 72
+    },
+    "ancilla_reuploading": {
+      "score": 0.5666666666666667,
+      "steps": 72
+    },
+    "strongly_entangling": {
+      "score": 0.6666666666666666,
+      "steps": 72
+    },
+    "qcnn": {
+      "score": 0.6333333333333333,
+      "steps": 72
+    },
+    "quantum_reservoir": {
+      "score": 0.6666666666666666,
+      "steps": 72
+    }
+  },
+  "mackey_glass": {
+    "classical_mlp": {
+      "score": -413.11399726729894,
+      "steps": 72
+    },
+    "hybrid_hqnn": {
+      "score": -8.023042519986577,
+      "steps": 72
+    },
+    "data_reuploading": {
+      "score": -340.4292623511,
+      "steps": 72
+    },
+    "ancilla_tracing": {
+      "score": -382.20987617220976,
+      "steps": 72
+    },
+    "ancilla_reuploading": {
+      "score": -374.9241795198123,
+      "steps": 72
+    },
+    "strongly_entangling": {
+      "score": -361.69898483921776,
+      "steps": 72
+    },
+    "qcnn": {
+      "score": -372.1117824001407,
+      "steps": 72
+    },
+    "quantum_reservoir": {
+      "score": -396.4632534266212,
+      "steps": 72
+    }
+  },
+  "x_sin_x": {
+    "classical_mlp": {
+      "score": 0.8526043819700564,
+      "steps": 72
+    },
+    "hybrid_hqnn": {
+      "score": 0.9895349052377467,
+      "steps": 72
+    },
+    "data_reuploading": {
+      "score": 0.7345335174575054,
+      "steps": 72
+    },
+    "ancilla_tracing": {
+      "score": 0.6158292998050717,
+      "steps": 72
+    },
+    "ancilla_reuploading": {
+      "score": 0.47031277807433347,
+      "steps": 72
+    },
+    "strongly_entangling": {
+      "score": 0.8788527108200216,
+      "steps": 35
+    },
+    "qcnn": {
+      "score": 0.8381538635535237,
+      "steps": 72
+    },
+    "quantum_reservoir": {
+      "score": 0.4571278490811943,
+      "steps": 72
+    }
+  }
+}

@@ -1,0 +1,241 @@
+{
+  "experiment": "global_admissible_nlps_weights",
+  "generated_utc": "2026-05-04T13:02:58.624364+00:00",
+  "n_samples": 100000,
+  "elapsed_s": 0.10104079998563975,
+  "constraints": [
+    "w_NLC > w_1-BPPI",
+    "w_1-BPPI >= w_TER",
+    "w_1-BPPI >= w_NSS",
+    "all weights >= 0.15",
+    "sum weights = 1"
+  ],
+  "weight_summary": {
+    "NLC": {
+      "mean": 0.3582917069140807,
+      "q05": 0.28670609902107863,
+      "median": 0.3501395513756738,
+      "q95": 0.45705147547371816
+    },
+    "1-BPPI": {
+      "mean": 0.258279077327212,
+      "q05": 0.20113131880629362,
+      "median": 0.2601754666068272,
+      "q95": 0.3093488154332252
+    },
+    "TER": {
+      "mean": 0.19174227672213037,
+      "q05": 0.15339304949867413,
+      "median": 0.1874391633981945,
+      "q95": 0.24454166137687913
+    },
+    "NSS": {
+      "mean": 0.19168693903657688,
+      "q05": 0.15339558251291202,
+      "median": 0.1873568991634851,
+      "q95": 0.24433895158771718
+    }
+  },
+  "analysis": {
+    "reference_ranking": [
+      {
+        "rank": 1,
+        "method": "data_reuploading",
+        "score": 0.58172
+      },
+      {
+        "rank": 2,
+        "method": "ancilla_tracing",
+        "score": 0.55152
+      },
+      {
+        "rank": 3,
+        "method": "ancilla_reuploading",
+        "score": 0.50703
+      },
+      {
+        "rank": 4,
+        "method": "qcnn",
+        "score": 0.49996
+      },
+      {
+        "rank": 5,
+        "method": "strongly_entangling",
+        "score": 0.21699000000000002
+      },
+      {
+        "rank": 6,
+        "method": "quantum_reservoir",
+        "score": 0.17858999999999997
+      }
+    ],
+    "rank_frequency": {
+      "ancilla_reuploading": {
+        "rank_1": 0.0,
+        "rank_2": 0.0,
+        "rank_3": 0.84333,
+        "rank_4": 0.15667,
+        "rank_5": 0.0,
+        "rank_6": 0.0,
+        "modal_rank": 3,
+        "min_rank": 3,
+        "max_rank": 4,
+        "p_top_2": 0.0,
+        "p_top_3": 0.84333
+      },
+      "ancilla_tracing": {
+        "rank_1": 0.0,
+        "rank_2": 1.0,
+        "rank_3": 0.0,
+        "rank_4": 0.0,
+        "rank_5": 0.0,
+        "rank_6": 0.0,
+        "modal_rank": 2,
+        "min_rank": 2,
+        "max_rank": 2,
+        "p_top_2": 1.0,
+        "p_top_3": 1.0
+      },
+      "data_reuploading": {
+        "rank_1": 1.0,
+        "rank_2": 0.0,
+        "rank_3": 0.0,
+        "rank_4": 0.0,
+        "rank_5": 0.0,
+        "rank_6": 0.0,
+        "modal_rank": 1,
+        "min_rank": 1,
+        "max_rank": 1,
+        "p_top_2": 1.0,
+        "p_top_3": 1.0
+      },
+      "qcnn": {
+        "rank_1": 0.0,
+        "rank_2": 0.0,
+        "rank_3": 0.15667,
+        "rank_4": 0.84333,
+        "rank_5": 0.0,
+        "rank_6": 0.0,
+        "modal_rank": 4,
+        "min_rank": 3,
+        "max_rank": 4,
+        "p_top_2": 0.0,
+        "p_top_3": 0.15667
+      },
+      "quantum_reservoir": {
+        "rank_1": 0.0,
+        "rank_2": 0.0,
+        "rank_3": 0.0,
+        "rank_4": 0.0,
+        "rank_5": 0.04069,
+        "rank_6": 0.95931,
+        "modal_rank": 6,
+        "min_rank": 5,
+        "max_rank": 6,
+        "p_top_2": 0.0,
+        "p_top_3": 0.0
+      },
+      "strongly_entangling": {
+        "rank_1": 0.0,
+        "rank_2": 0.0,
+        "rank_3": 0.0,
+        "rank_4": 0.0,
+        "rank_5": 0.95931,
+        "rank_6": 0.04069,
+        "modal_rank": 5,
+        "min_rank": 5,
+        "max_rank": 6,
+        "p_top_2": 0.0,
+        "p_top_3": 0.0
+      }
+    },
+    "pairwise_win_probability": {
+      "ancilla_reuploading": {
+        "ancilla_tracing": 0.0,
+        "data_reuploading": 0.0,
+        "qcnn": 0.84333,
+        "quantum_reservoir": 1.0,
+        "strongly_entangling": 1.0
+      },
+      "ancilla_tracing": {
+        "ancilla_reuploading": 1.0,
+        "data_reuploading": 0.0,
+        "qcnn": 1.0,
+        "quantum_reservoir": 1.0,
+        "strongly_entangling": 1.0
+      },
+      "data_reuploading": {
+        "ancilla_reuploading": 1.0,
+        "ancilla_tracing": 1.0,
+        "qcnn": 1.0,
+        "quantum_reservoir": 1.0,
+        "strongly_entangling": 1.0
+      },
+      "qcnn": {
+        "ancilla_reuploading": 0.15667,
+        "ancilla_tracing": 0.0,
+        "data_reuploading": 0.0,
+        "quantum_reservoir": 1.0,
+        "strongly_entangling": 1.0
+      },
+      "quantum_reservoir": {
+        "ancilla_reuploading": 0.0,
+        "ancilla_tracing": 0.0,
+        "data_reuploading": 0.0,
+        "qcnn": 0.0,
+        "strongly_entangling": 0.04069
+      },
+      "strongly_entangling": {
+        "ancilla_reuploading": 0.0,
+        "ancilla_tracing": 0.0,
+        "data_reuploading": 0.0,
+        "qcnn": 0.0,
+        "quantum_reservoir": 0.95931
+      }
+    },
+    "rank_correlation_with_reference": {
+      "kendall_tau_mean": 0.9736853333333335,
+      "kendall_tau_std": 0.05313781334521688,
+      "spearman_mean": 0.9887222857142857,
+      "spearman_std": 0.022773348576521538
+    },
+    "score_quantiles": {
+      "ancilla_reuploading": {
+        "mean": 0.5105676548464986,
+        "q05": 0.46143334013070375,
+        "median": 0.5124965990415564,
+        "q95": 0.5525757067165175
+      },
+      "ancilla_tracing": {
+        "mean": 0.5542968474492123,
+        "q05": 0.5051192717210654,
+        "median": 0.5547697260144441,
+        "q95": 0.6009814913113237
+      },
+      "data_reuploading": {
+        "mean": 0.5851154627517118,
+        "q05": 0.5493164702395091,
+        "median": 0.5837666401335095,
+        "q95": 0.6251404824680247
+      },
+      "qcnn": {
+        "mean": 0.5008690536151915,
+        "q05": 0.46306004623799074,
+        "median": 0.5007094870757098,
+        "q95": 0.5394275402825909
+      },
+      "quantum_reservoir": {
+        "mean": 0.1745462877510246,
+        "q05": 0.1502929169099176,
+        "median": 0.17183926268745606,
+        "q95": 0.20754249715082962
+      },
+      "strongly_entangling": {
+        "mean": 0.21707666177413998,
+        "q05": 0.19950948613142663,
+        "median": 0.21458041505260256,
+        "q95": 0.24289398833797018
+      }
+    }
+  }
+}

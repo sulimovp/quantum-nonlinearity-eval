@@ -1,0 +1,134 @@
+{
+  "data_reuploading": {
+    "nlc": 0.45483431536882474,
+    "score_definition": "continuous_area_under_positive_r2_vs_log2_frequency",
+    "legacy_k_star": 1,
+    "legacy_threshold_score": 0.0,
+    "r2_by_k": {
+      "1": 0.9827781398619699,
+      "2": 0.7966519169674346,
+      "4": 0.5312962745768792,
+      "8": -0.06593433560487871,
+      "16": -0.03510440946894189
+    },
+    "positive_r2_by_k": {
+      "1": 0.9827781398619699,
+      "2": 0.7966519169674346,
+      "4": 0.5312962745768792,
+      "8": 0.0,
+      "16": 0.0
+    },
+    "r2_threshold": 0.95,
+    "k_max": 16
+  },
+  "ancilla_tracing": {
+    "nlc": 0.3022600131207197,
+    "score_definition": "continuous_area_under_positive_r2_vs_log2_frequency",
+    "legacy_k_star": 1,
+    "legacy_threshold_score": 0.0,
+    "r2_by_k": {
+      "1": 0.9977247222297947,
+      "2": 0.7101776913679814,
+      "4": -0.0015512327890889743,
+      "8": -0.00040519705356034663,
+      "16": -0.0005869954350852247
+    },
+    "positive_r2_by_k": {
+      "1": 0.9977247222297947,
+      "2": 0.7101776913679814,
+      "4": 0.0,
+      "8": 0.0,
+      "16": 0.0
+    },
+    "r2_threshold": 0.95,
+    "k_max": 16
+  },
+  "ancilla_reuploading": {
+    "nlc": 0.26393427408668485,
+    "score_definition": "continuous_area_under_positive_r2_vs_log2_frequency",
+    "legacy_k_star": null,
+    "legacy_threshold_score": null,
+    "r2_by_k": {
+      "1": 0.49727884437706515,
+      "2": 0.6157766843713026,
+      "4": 0.19132098978690404,
+      "8": -0.010008085828601576,
+      "16": -0.0034156906682125676
+    },
+    "positive_r2_by_k": {
+      "1": 0.49727884437706515,
+      "2": 0.6157766843713026,
+      "4": 0.19132098978690404,
+      "8": 0.0,
+      "16": 0.0
+    },
+    "r2_threshold": 0.95,
+    "k_max": 16
+  },
+  "strongly_entangling": {
+    "nlc": 0.36954754108485965,
+    "score_definition": "continuous_area_under_positive_r2_vs_log2_frequency",
+    "legacy_k_star": 2,
+    "legacy_threshold_score": 0.25,
+    "r2_by_k": {
+      "1": 0.9987682142909224,
+      "2": 0.9788060571939774,
+      "4": -0.0006526097326602365,
+      "8": -0.0001706376852022018,
+      "16": -0.00012109281665173555
+    },
+    "positive_r2_by_k": {
+      "1": 0.9987682142909224,
+      "2": 0.9788060571939774,
+      "4": 0.0,
+      "8": 0.0,
+      "16": 0.0
+    },
+    "r2_threshold": 0.95,
+    "k_max": 16
+  },
+  "qcnn": {
+    "nlc": 0.278988921193275,
+    "score_definition": "continuous_area_under_positive_r2_vs_log2_frequency",
+    "legacy_k_star": 1,
+    "legacy_threshold_score": 0.0,
+    "r2_by_k": {
+      "1": 0.9581155082823128,
+      "2": 0.6368979306319437,
+      "4": -0.0007910626812204224,
+      "8": -0.0016471441694183575,
+      "16": -0.0006835248196237487
+    },
+    "positive_r2_by_k": {
+      "1": 0.9581155082823128,
+      "2": 0.6368979306319437,
+      "4": 0.0,
+      "8": 0.0,
+      "16": 0.0
+    },
+    "r2_threshold": 0.95,
+    "k_max": 16
+  },
+  "quantum_reservoir": {
+    "nlc": 0.05059252487081396,
+    "score_definition": "continuous_area_under_positive_r2_vs_log2_frequency",
+    "legacy_k_star": null,
+    "legacy_threshold_score": null,
+    "r2_by_k": {
+      "1": 0.2030748475405525,
+      "2": 0.1008326757129796,
+      "4": -0.03344675907300654,
+      "8": -0.033443224170095265,
+      "16": -0.03344267416008351
+    },
+    "positive_r2_by_k": {
+      "1": 0.2030748475405525,
+      "2": 0.1008326757129796,
+      "4": 0.0,
+      "8": 0.0,
+      "16": 0.0
+    },
+    "r2_threshold": 0.95,
+    "k_max": 16
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "formula_version": "reviewer_proof_v2",
+  "formula_weights": {
+    "NLC": 0.35,
+    "1-BPPI": 0.25,
+    "TER": 0.2,
+    "NSS": 0.2
+  },
+  "component_files": {
+    "NLC": "nlc_scores.json",
+    "BPPI": "bppi_scores.json",
+    "TER": "ter_scores.json",
+    "NSS": "nss_scores.json"
+  },
+  "note": "effective_weights renormalize to 1 over non-NaN NLPS components per method",
+  "by_method": {
+    "strongly_entangling": {
+      "valid_components": [
+        "NLC",
+        "1-BPPI",
+        "TER",
+        "NSS"
+      ],
+      "effective_weights": {
+        "NLC": 0.35,
+        "1-BPPI": 0.25,
+        "TER": 0.2,
+        "NSS": 0.2
+      },
+      "weight_sum_used": 1.0
+    },
+    "data_reuploading": {
+      "valid_components": [
+        "NLC",
+        "1-BPPI",
+        "TER",
+        "NSS"
+      ],
+      "effective_weights": {
+        "NLC": 0.35,
+        "1-BPPI": 0.25,
+        "TER": 0.2,
+        "NSS": 0.2
+      },
+      "weight_sum_used": 1.0
+    },
+    "ancilla_tracing": {
+      "valid_components": [
+        "NLC",
+        "1-BPPI",
+        "TER",
+        "NSS"
+      ],
+      "effective_weights": {
+        "NLC": 0.35,
+        "1-BPPI": 0.25,
+        "TER": 0.2,
+        "NSS": 0.2
+      },
+      "weight_sum_used": 1.0
+    },
+    "ancilla_reuploading": {
+      "valid_components": [
+        "NLC",
+        "1-BPPI",
+        "TER",
+        "NSS"
+      ],
+      "effective_weights": {
+        "NLC": 0.35,
+        "1-BPPI": 0.25,
+        "TER": 0.2,
+        "NSS": 0.2
+      },
+      "weight_sum_used": 1.0
+    },
+    "qcnn": {
+      "valid_components": [
+        "NLC",
+        "1-BPPI",
+        "TER",
+        "NSS"
+      ],
+      "effective_weights": {
+        "NLC": 0.35,
+        "1-BPPI": 0.25,
+        "TER": 0.2,
+        "NSS": 0.2
+      },
+      "weight_sum_used": 1.0
+    },
+    "quantum_reservoir": {
+      "valid_components": [
+        "NLC",
+        "1-BPPI",
+        "TER",
+        "NSS"
+      ],
+      "effective_weights": {
+        "NLC": 0.35,
+        "1-BPPI": 0.25,
+        "TER": 0.2,
+        "NSS": 0.2
+      },
+      "weight_sum_used": 1.0
+    }
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "generated_utc": "2026-08-02T18:38:26.319074+00:00",
+  "seeds": [
+    42,
+    43
+  ],
+  "n_init": 16,
+  "n_qubit_sweep": [
+    2,
+    4,
+    6
+  ],
+  "n_layers": 3,
+  "reference_ranking": "default_published",
+  "probes": {
+    "default_published": {
+      "per_seed": {
+        "42": {
+          "data_reuploading": 0.08290327566931033,
+          "ancilla_tracing": 0.0,
+          "ancilla_reuploading": 0.0,
+          "strongly_entangling": 0.963796977568294,
+          "qcnn": 0.21418471301690045,
+          "quantum_reservoir": 0.8749348159319553
+        },
+        "43": {
+          "data_reuploading": 0.06887810958756413,
+          "ancilla_tracing": 0.0,
+          "ancilla_reuploading": 0.08686849629590798,
+          "strongly_entangling": 0.9709406345870907,
+          "qcnn": 0.3356120850878057,
+          "quantum_reservoir": 0.637590565415965
+        }
+      },
+      "mean_bppi": {
+        "data_reuploading": 0.07589069262843723,
+        "ancilla_tracing": 0.0,
+        "ancilla_reuploading": 0.04343424814795399,
+        "strongly_entangling": 0.9673688060776924,
+        "qcnn": 0.2748983990523531,
+        "quantum_reservoir": 0.7562626906739602
+      },
+      "ranking": [
+        "ancilla_tracing",
+        "ancilla_reuploading",
+        "data_reuploading",
+        "qcnn",
+        "quantum_reservoir",
+        "strongly_entangling"
+      ],
+      "source": "published_sweep",
+      "kendall_tau_vs_default": 0.9999999999999999
+    },
+    "default_ablation_budget": {
+      "per_seed": {
+        "42": {
+          "data_reuploading": 0.1839582448084336,
+          "ancilla_tracing": 0.0,
+          "ancilla_reuploading": 0.0,
+          "strongly_entangling": 0.9935679739126501,
+          "qcnn": 0.629701811697841,
+          "quantum_reservoir": 0.5029339207313727
+        },
+        "43": {
+          "data_reuploading": 0.0,
+          "ancilla_tracing": 0.509983894414204,
+          "ancilla_reuploading": 0.0,
+          "strongly_entangling": 0.9926156998249028,
+          "qcnn": 0.6038543750278096,
+          "quantum_reservoir": 0.0
+        }
+      },
+      "mean_bppi": {
+        "data_reuploading": 0.0919791224042168,
+        "ancilla_tracing": 0.254991947207102,
+        "ancilla_reuploading": 0.0,
+        "strongly_entangling": 0.9930918368687764,
+        "qcnn": 0.6167780933628253,
+        "quantum_reservoir": 0.25146696036568633
+      },
+      "ranking": [
+        "ancilla_reuploading",
+        "data_reuploading",
+        "quantum_reservoir",
+        "ancilla_tracing",
+        "qcnn",
+        "strongly_entangling"
+      ],
+      "source": "recomputed",
+      "kendall_tau_vs_default": 0.4666666666666666
+    },
+    "alt_x_0.1": {
+      "per_seed": {
+        "42": {
+          "data_reuploading": 0.6248103500755253,
+          "ancilla_tracing": 0.5030715704569934,
+          "ancilla_reuploading": 0.40862144726828054,
+          "strongly_entangling": 0.9958039270224487,
+          "qcnn": 0.6567376840978092,
+          "quantum_reservoir": 0.9240832371868343
+        },
+        "43": {
+          "data_reuploading": 0.554345922142955,
+          "ancilla_tracing": 0.570376691163216,
+          "ancilla_reuploading": 0.6220317183822146,
+          "strongly_entangling": 0.9737300727398153,
+          "qcnn": 0.5586719991352496,
+          "quantum_reservoir": 0.6243953700182059
+        }
+      },
+      "mean_bppi": {
+        "data_reuploading": 0.5895781361092401,
+        "ancilla_tracing": 0.5367241308101047,
+        "ancilla_reuploading": 0.5153265828252476,
+        "strongly_entangling": 0.9847669998811319,
+        "qcnn": 0.6077048416165294,
+        "quantum_reservoir": 0.7742393036025201
+      },
+      "ranking": [
+        "ancilla_reuploading",
+        "ancilla_tracing",
+        "data_reuploading",
+        "qcnn",
+        "quantum_reservoir",
+        "strongly_entangling"
+      ],
+      "source": "recomputed",
+      "kendall_tau_vs_default": 0.8666666666666666
+    },
+    "alt_x_1.0": {
+      "per_seed": {
+        "42": {
+          "data_reuploading": 0.0,
+          "ancilla_tracing": 0.15541103460857786,
+          "ancilla_reuploading": 0.0,
+          "strongly_entangling": 0.9869113373361139,
+          "qcnn": 0.6762989292554296,
+          "quantum_reservoir": 0.67365563317203
+        },
+        "43": {
+          "data_reuploading": 0.18493986100310256,
+          "ancilla_tracing": 0.619071843792895,
+          "ancilla_reuploading": 0.24880382693347203,
+          "strongly_entangling": 0.9934973364956549,
+          "qcnn": 0.4453093627623804,
+          "quantum_reservoir": 0.9123750275724658
+        }
+      },
+      "mean_bppi": {
+        "data_reuploading": 0.09246993050155128,
+        "ancilla_tracing": 0.38724143920073645,
+        "ancilla_reuploading": 0.12440191346673601,
+        "strongly_entangling": 0.9902043369158844,
+        "qcnn": 0.560804146008905,
+        "quantum_reservoir": 0.7930153303722479
+      },
+      "ranking": [
+        "data_reuploading",
+        "ancilla_reuploading",
+        "ancilla_tracing",
+        "qcnn",
+        "quantum_reservoir",
+        "strongly_entangling"
+      ],
+      "source": "recomputed",
+      "kendall_tau_vs_default": 0.6
+    },
+    "local_mse": {
+      "per_seed": {
+        "42": {
+          "data_reuploading": 0.5183933942334369,
+          "ancilla_tracing": 0.0,
+          "ancilla_reuploading": 0.17157581340403727,
+          "strongly_entangling": 0.7832191459198717,
+          "qcnn": 0.35227555766188956,
+          "quantum_reservoir": 0.9772883990841128
+        },
+        "43": {
+          "data_reuploading": 0.23276611799152225,
+          "ancilla_tracing": 0.4330537635999798,
+          "ancilla_reuploading": 0.16078924207296308,
+          "strongly_entangling": 0.9579187880996534,
+          "qcnn": 0.0,
+          "quantum_reservoir": 0.7310890259655494
+        }
+      },
+      "mean_bppi": {
+        "data_reuploading": 0.37557975611247957,
+        "ancilla_tracing": 0.2165268817999899,
+        "ancilla_reuploading": 0.16618252773850017,
+        "strongly_entangling": 0.8705689670097625,
+        "qcnn": 0.17613777883094478,
+        "quantum_reservoir": 0.8541887125248311
+      },
+      "ranking": [
+        "ancilla_reuploading",
+        "qcnn",
+        "ancilla_tracing",
+        "data_reuploading",
+        "quantum_reservoir",
+        "strongly_entangling"
+      ],
+      "source": "recomputed",
+      "kendall_tau_vs_default": 0.6
+    }
+  }
+}

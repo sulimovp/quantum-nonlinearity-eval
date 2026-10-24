@@ -1,0 +1,26 @@
+{
+  "score_definition": "continuous_trainability_efficiency_score",
+  "ter_trained_methods": [
+    "data_reuploading",
+    "ancilla_tracing",
+    "ancilla_reuploading",
+    "strongly_entangling",
+    "qcnn",
+    "quantum_reservoir"
+  ],
+  "n_train": 120,
+  "n_test": 60,
+  "n_steps": 200,
+  "train_eval_every": 10,
+  "train_window_start": 500,
+  "run_seed": 44,
+  "n_qubits": 4,
+  "n_layers": 4,
+  "min_params_reference": 8,
+  "components": {
+    "curve_score": 0.5,
+    "best_train_score": 0.3,
+    "test_score": 0.2,
+    "param_efficiency": "sqrt(min_params / n_params) multiplier"
+  }
+}

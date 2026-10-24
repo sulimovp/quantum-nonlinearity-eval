@@ -1,0 +1,46 @@
+{
+  "circles": {
+    "classical_mlp": {
+      "score": 1.0,
+      "steps": 22
+    },
+    "hybrid_hqnn": {
+      "score": 0.7,
+      "steps": 22
+    },
+    "data_reuploading": {
+      "score": 0.6666666666666666,
+      "steps": 22
+    },
+    "ancilla_tracing": {
+      "score": 0.7666666666666667,
+      "steps": 22
+    },
+    "ancilla_reuploading": {
+      "score": 0.6666666666666666,
+      "steps": 22
+    }
+  },
+  "moons": {
+    "classical_mlp": {
+      "score": 0.8666666666666667,
+      "steps": 22
+    },
+    "hybrid_hqnn": {
+      "score": 0.6,
+      "steps": 22
+    },
+    "data_reuploading": {
+      "score": 0.5333333333333333,
+      "steps": 22
+    },
+    "ancilla_tracing": {
+      "score": 0.5333333333333333,
+      "steps": 22
+    },
+    "ancilla_reuploading": {
+      "score": 0.6,
+      "steps": 22
+    }
+  }
+}

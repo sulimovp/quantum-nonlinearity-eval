@@ -1,0 +1,50 @@
+{
+  "ancilla_reuploading": {
+    "NLC": 0.2602,
+    "BPPI": 0.0915,
+    "1-BPPI": 0.9085,
+    "TER": 0.1504,
+    "NSS": 0.6686,
+    "NLPS": 0.482
+  },
+  "ancilla_tracing": {
+    "NLC": 0.3095,
+    "BPPI": 0.0,
+    "1-BPPI": 1.0,
+    "TER": 0.0777,
+    "NSS": 0.8863,
+    "NLPS": 0.5511
+  },
+  "data_reuploading": {
+    "NLC": 0.4038,
+    "BPPI": 0.1755,
+    "1-BPPI": 0.8245,
+    "TER": 0.0568,
+    "NSS": 0.9034,
+    "NLPS": 0.5395
+  },
+  "qcnn": {
+    "NLC": 0.266,
+    "BPPI": 0.3112,
+    "1-BPPI": 0.6888,
+    "TER": 0.1163,
+    "NSS": 0.9151,
+    "NLPS": 0.4716
+  },
+  "quantum_reservoir": {
+    "NLC": 0.1182,
+    "BPPI": 0.9964,
+    "1-BPPI": 0.0036,
+    "TER": 0.0062,
+    "NSS": 0.5011,
+    "NLPS": 0.1437
+  },
+  "strongly_entangling": {
+    "NLC": 0.3671,
+    "BPPI": 0.9698,
+    "1-BPPI": 0.0302,
+    "TER": 0.1233,
+    "NSS": 0.3318,
+    "NLPS": 0.2271
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "score_definition": "continuous_area_under_positive_r2_vs_log2_frequency",
+  "k_values": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "r2_threshold_legacy": 0.95,
+  "n_train": 36,
+  "n_eval": 120,
+  "n_steps": 50,
+  "n_steps_by_method": {
+    "ancilla_reuploading": 100,
+    "quantum_reservoir": 120
+  },
+  "run_seed": 46
+}

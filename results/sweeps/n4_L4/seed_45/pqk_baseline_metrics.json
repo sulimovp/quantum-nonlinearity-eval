@@ -1,0 +1,44 @@
+{
+  "data_reuploading": {
+    "parameter_count": 32.0,
+    "readout_mean_z0": -0.0012865480062150317,
+    "readout_var_z0": 0.11840511380331921,
+    "n_samples": 256.0,
+    "x_fix": 0.0
+  },
+  "ancilla_tracing": {
+    "parameter_count": 32.0,
+    "readout_mean_z0": -0.026978736227984332,
+    "readout_var_z0": 0.1257159254042161,
+    "n_samples": 256.0,
+    "x_fix": 0.0
+  },
+  "ancilla_reuploading": {
+    "parameter_count": 32.0,
+    "readout_mean_z0": -0.026978736227984346,
+    "readout_var_z0": 0.1257159254042161,
+    "n_samples": 256.0,
+    "x_fix": 0.0
+  },
+  "strongly_entangling": {
+    "parameter_count": 48.0,
+    "readout_mean_z0": -0.008028082721356349,
+    "readout_var_z0": 0.04579699627217422,
+    "n_samples": 256.0,
+    "x_fix": 0.0
+  },
+  "qcnn": {
+    "parameter_count": 16.0,
+    "readout_mean_z0": 0.007007718631572188,
+    "readout_var_z0": 0.09589590943345365,
+    "n_samples": 256.0,
+    "x_fix": 0.0
+  },
+  "quantum_reservoir": {
+    "parameter_count": 8.0,
+    "readout_mean_z0": -0.001784939344326878,
+    "readout_var_z0": 0.02088111576105194,
+    "n_samples": 256.0,
+    "x_fix": 0.0
+  }
+}

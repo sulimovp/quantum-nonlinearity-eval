@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper below."
+title: "A Reproducible Evaluation Protocol for Quantum Non-Linearity in Variational Quantum Models: code and data (camera-ready)"
+version: camera-ready
+authors:
+  - family-names: Sulimov
+    given-names: Pavel
+    affiliation: "Zurich University of Applied Sciences (ZHAW), Switzerland"
+  - family-names: Lehmann
+    given-names: Claude
+    affiliation: "Zurich University of Applied Sciences (ZHAW), Switzerland"
+license: CC-BY-4.0
+preferred-citation:
+  type: conference-paper
+  title: "A Reproducible Evaluation Protocol for Quantum Non-Linearity in Variational Quantum Models"
+  collection-title: "Advances in Neural Information Processing Systems 39 (NeurIPS 2026), Evaluations and Datasets Track"
+  year: 2026
+  authors:
+    - family-names: Sulimov
+      given-names: Pavel
+    - family-names: Lehmann
+      given-names: Claude

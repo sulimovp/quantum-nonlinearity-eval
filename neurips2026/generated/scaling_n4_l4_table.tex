@@ -1,0 +1,24 @@
+% Composite columns from scripts/paper_export_scaling_table.py (results/scaling_comparison/summary.json).
+% Component columns transcribed from the authors' OpenReview rebuttal of 27 Jul 2026 (same (4,4) run, K=5, seeds 42-46);
+% the per-seed sweep directories are not kept in the repository, so the script cannot regenerate them.
+% Kendall tau between (n,L)=(3,3) and (4,4) mean NLPS ranks: 0.600
+\begin{table}[t]
+  \caption{Mean component and composite scores at $(n,L)=(3,3) \rightarrow (4,4)$ (quantum ans\"atze only, $K=5$ seeds), with the \nlps\ rank at each point. Kendall $\tau=0.60$ between the two rank orderings.}
+  \label{tab:scaling-n4-l4}
+  \centering
+  \footnotesize
+  \setlength{\tabcolsep}{4pt}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{lcccccc}
+    \toprule
+    Method & \nlc & $1-\bppi$ & \ter & \nss & \nlps & Rank $(3,3)\rightarrow(4,4)$ \\
+    \midrule
+    Data reuploading    & $0.437 \rightarrow 0.582$ & $0.876 \rightarrow 0.666$ & $0.073 \rightarrow 0.118$ & $0.902 \rightarrow 0.825$ & $0.567 \rightarrow 0.559$ & $1 \rightarrow 2$ \\
+    Ancilla tracing     & $0.307 \rightarrow 0.125$ & $0.988 \rightarrow 0.813$ & $0.088 \rightarrow 0.088$ & $0.893 \rightarrow 0.844$ & $0.551 \rightarrow 0.433$ & $2 \rightarrow 4$ \\
+    Ancilla reuploading & $0.261 \rightarrow 0.593$ & $0.938 \rightarrow 0.861$ & $0.151 \rightarrow 0.122$ & $0.673 \rightarrow 0.761$ & $0.491 \rightarrow 0.599$ & $3 \rightarrow 1$ \\
+    Quantum CNN         & $0.292 \rightarrow 0.374$ & $0.662 \rightarrow 0.448$ & $0.121 \rightarrow 0.125$ & $0.890 \rightarrow 0.856$ & $0.470 \rightarrow 0.439$ & $4 \rightarrow 3$ \\
+    Strongly entangling & $0.368 \rightarrow 0.427$ & $0.029 \rightarrow 0.035$ & $0.123 \rightarrow 0.111$ & $0.338 \rightarrow 0.482$ & $0.228 \rightarrow 0.277$ & $5 \rightarrow 5$ \\
+    Quantum reservoir   & $0.087 \rightarrow 0.100$ & $0.311 \rightarrow 0.310$ & $0.009 \rightarrow 0.008$ & $0.517 \rightarrow 0.516$ & $0.213 \rightarrow 0.217$ & $6 \rightarrow 6$ \\
+    \bottomrule
+  \end{tabular}}
+\end{table}
