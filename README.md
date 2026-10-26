@@ -5,7 +5,7 @@ Code and data for the paper
 > P. Sulimov and C. Lehmann, *A Reproducible Evaluation Protocol for Quantum Non-Linearity in Variational Quantum Models*,
 > Advances in Neural Information Processing Systems 39 (NeurIPS 2026), Evaluations and Datasets Track.
 
-**Authors and provenance.** Pavel Sulimov and Claude Lehmann, Zurich University of Applied Sciences (ZHAW), Switzerland. This repository is
+**Authors and provenance.** Pavel Sulimov (Zurich University of Applied Sciences, ZHAW) and Claude Lehmann (ZHAW and University of Zurich, UZH), Switzerland. This repository is
 the code and data state matching the camera-ready version of the paper. The same code was provided as supplementary material during review.
 **Licence:** CC BY 4.0 (see `LICENSE`). **Version:** the git tag `camera-ready` marks the state that matches the published paper.
 
