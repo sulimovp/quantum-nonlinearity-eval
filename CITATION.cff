@@ -10,6 +10,7 @@ authors:
     given-names: Claude
     affiliation: "Zurich University of Applied Sciences (ZHAW), Switzerland"
 license: CC-BY-4.0
+repository-code: "https://github.com/sulimovp/quantum-nonlinearity-eval"
 preferred-citation:
   type: conference-paper
   title: "A Reproducible Evaluation Protocol for Quantum Non-Linearity in Variational Quantum Models"

@@ -465,7 +465,7 @@ As to broader impact, the protocol is an evaluation tool for a pre-deployment re
 We thank the two anonymous reviewers and the area chair for the discussion that led to the operating-point and probe-ablation controls in Appendices~\ref{app:bppi-probe-ablation} and~\ref{app:scaling-n4-l4}.
 
 \paragraph{Funding and competing interests.}
-No third-party funding was received for this work. The authors declare no competing interests.
+This work was partially funded by the Institute of Computer Science at Zurich University of Applied Sciences through the project \textnumero\,79838 ``QML -- Quantum Machine Learning''~\citep{zhaw2026qml}. The authors declare no competing interests.
 
 %\section*{References}
 \newpage
@@ -598,6 +598,11 @@ S.~Sim, P.~D. Johnson, and A.~Aspuru-Guzik.
 \newblock Expressibility and entangling capability of parameterized quantum circuits for hybrid quantum-classical algorithms.
 \newblock \emph{Advanced Quantum Technologies}, 2:1900070, 2019.
 
+\bibitem[ZHAW(2026)]{zhaw2026qml}
+Zurich University of Applied Sciences (ZHAW), Institute of Computer Science.
+\newblock QML -- Quantum Machine Learning.
+\newblock Research project, 2026. \url{https://www.zhaw.ch/en/research/project/79838}.
+
 \end{thebibliography}
 }
 
@@ -621,7 +626,7 @@ The classical-MLP baseline uses the same training budget, loss, and optimizer as
 The accompanying code release is the authoritative specification beyond what fits in the main text: it fixes the evaluation order (\nlc\ $\to$ \bppi\ $\to$ \nss\ $\to$ \ter\ $\to$ composite, then optional hybrid and real-data stages), records hyperparameters and budgets for each stage, and exports both the headline scalars and the intermediate objects needed to audit them (per-$k$ Fourier fits, fitted gradient-variance slopes and raw variances, noise-ladder curves, Lorenz train curves, and composite metadata including any renormalization when a component is missing).
 The global random seed is set through a single environment variable documented in the release; changing seed, width, depth, or method list invalidates cached partial runs so that mixed protocol versions cannot be spliced silently.
 The full evaluation pipeline, including the per-seed raw diagnostics behind every table, is publicly available at
-{\color{red}\textbf{\large TODO: PUBLIC REPOSITORY URL (authored by the present authors; the repository README must state the licence and the commit matching this version)}}.
+\url{https://github.com/sulimovp/quantum-nonlinearity-eval}; its README states the authors, the licence (CC BY 4.0) and the \texttt{camera-ready} tag of this version.
 The same code was provided as the supplementary material during review.
 
 Section~\ref{app:weight-sensitivity} defines the weight-sensitivity Monte Carlo on top of the frozen component scores.

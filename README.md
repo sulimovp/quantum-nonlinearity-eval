@@ -7,7 +7,10 @@ Code and data for the paper
 
 **Authors and provenance.** Pavel Sulimov and Claude Lehmann, Zurich University of Applied Sciences (ZHAW), Switzerland. This repository is
 the code and data state matching the camera-ready version of the paper. The same code was provided as supplementary material during review.
-**Licence:** CC BY 4.0 (see `LICENSE`).
+**Licence:** CC BY 4.0 (see `LICENSE`). **Version:** the git tag `camera-ready` marks the state that matches the published paper.
+
+**Funding.** This work was partially funded by the Institute of Computer Science at Zurich University of Applied Sciences through the project
+No. 79838 "QML – Quantum Machine Learning" (https://www.zhaw.ch/en/research/project/79838).
 
 ## What the protocol measures
 
