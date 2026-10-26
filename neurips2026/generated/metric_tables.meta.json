@@ -1,21 +1,19 @@
 {
-  "utc": "2026-07-23T20:57:12.979782+00:00",
+  "utc": "2026-10-26T22:50:56.345545+00:00",
   "source": "results\\sweeps\\n3_L3",
-  "n_seed_dirs": 6,
+  "n_seed_dirs": 5,
   "seeds": [
     42,
     43,
     44,
     45,
-    46,
-    -1
+    46
   ],
   "paths": [
     "results\\sweeps\\n3_L3\\seed_42",
     "results\\sweeps\\n3_L3\\seed_43",
     "results\\sweeps\\n3_L3\\seed_44",
     "results\\sweeps\\n3_L3\\seed_45",
-    "results\\sweeps\\n3_L3\\seed_46",
-    "results\\sweeps\\n3_L3\\seed_99_verify"
+    "results\\sweeps\\n3_L3\\seed_46"
   ]
 }
