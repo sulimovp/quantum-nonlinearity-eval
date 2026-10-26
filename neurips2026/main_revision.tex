@@ -386,7 +386,7 @@ Table~\ref{tab:real-data} reports results from the released real-data evaluation
 How these columns relate to the protocol scores is analysed in Section~\ref{sec:metric-divergence}.
 
 \begin{table}[t]
-  \caption{Real-data scores from the released evaluation. Classification columns report test accuracy in $[0,1]$; regression columns report test $R^2$ (higher is better; values below zero mean worse than predicting the training mean). Mackey-Glass one-step forecasting is a deliberately hard chaotic regression under a single Pauli-$Z$ readout: every model attains large negative $R^2$, so the column is a stress test where ``best'' means least negative. The $x\sin(x)$ task is a smoother one-dimensional map with targets scaled to the readout range. Quantum rows (including ancilla reuploading) are reported above the midrule; the row labelled \emph{Strongly entangling (baseline)} is a hardware-efficient PQC (Strongly-Entangling-Layers with a single angle encoding, no re-uploading and no ancilla tricks) and plays the role of a \emph{simple quantum baseline}. Below the midrule, the classical MLP and the hybrid QCNN use classical capacity that pure PQCs do not; those rows are non-competing references. \protect\input{generated/table_agg_blurb.tex}}
+  \caption{Real-data scores from the released evaluation. Classification columns report test accuracy in $[0,1]$; regression columns report test $R^2$ (higher is better; values below zero mean worse than predicting the training mean). Mackey-Glass one-step forecasting is a deliberately hard chaotic regression under a single Pauli-$Z$ readout: every model attains large negative $R^2$, so the column is a stress test where ``best'' means least negative. The $x\sin(x)$ task is a smoother one-dimensional map with targets scaled to the readout range. Quantum rows (including ancilla reuploading) are reported above the midrule; the row labelled \emph{Strongly entangling (baseline)} is a hardware-efficient PQC (Strongly-Entangling-Layers with a single angle encoding, no re-uploading and no ancilla tricks) and plays the role of a \emph{simple quantum baseline}. Below the midrule, the classical MLP and the hybrid QCNN use classical capacity that pure PQCs do not; those rows are non-competing references and are never bolded; bold marks the best value among the quantum rows only. \protect\input{generated/table_agg_blurb.tex}}
   \label{tab:real-data}
   \centering
   \small
@@ -466,7 +466,7 @@ As to broader impact, the protocol is an evaluation tool for a pre-deployment re
 We thank the two anonymous reviewers and the area chair for the discussion that led to the operating-point and probe-ablation controls in Appendices~\ref{app:bppi-probe-ablation} and~\ref{app:scaling-n4-l4}.
 
 \paragraph{Funding and competing interests.}
-This work was partially funded by the Institute of Computer Science at Zurich University of Applied Sciences through the project \textnumero\,79838 ``QML -- Quantum Machine Learning''~\citep{zhaw2026qml}. The authors declare no competing interests.
+This work was partially funded by the Institute of Computer Science at Zurich University of Applied Sciences through the project \textnumero\,79838 ``QML -- Quantum Machine Learning''. The authors declare no competing interests.
 
 %\section*{References}
 \newpage
@@ -598,11 +598,6 @@ M.~Schuld, R.~Sweke, and J.~J.~Meyer.
 S.~Sim, P.~D. Johnson, and A.~Aspuru-Guzik.
 \newblock Expressibility and entangling capability of parameterized quantum circuits for hybrid quantum-classical algorithms.
 \newblock \emph{Advanced Quantum Technologies}, 2:1900070, 2019.
-
-\bibitem[ZHAW(2026)]{zhaw2026qml}
-Zurich University of Applied Sciences (ZHAW), Institute of Computer Science.
-\newblock QML -- Quantum Machine Learning.
-\newblock Research project, 2026. \url{https://www.zhaw.ch/en/research/project/79838}.
 
 \end{thebibliography}
 }

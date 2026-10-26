@@ -428,8 +428,7 @@ def main() -> int:
     if k >= 2 and all(s >= 0 for s in seeds_parsed):
         suffix = (
             f"Mean $\\pm$ one standard deviation over $K={k}$ protocol runs "
-            f"(\\texttt{{QNLEP\\_SEED}} $\\in \\{{{', '.join(str(s) for s in sorted(seeds_parsed))}\\}}$). "
-            "Bold marks the highest mean per column \\emph{among quantum rows only}; classical reference rows are shown below the midrule and are never bolded."
+            f"(\\texttt{{QNLEP\\_SEED}} $\\in \\{{{', '.join(str(s) for s in sorted(seeds_parsed))}\\}}$)."
         )
     else:
         suffix = (
